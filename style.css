@@ -6,13 +6,42 @@ html {
 
 body {
   margin: 0;
-  min-height: 100vh;
   font-family: 'Barlow', sans-serif;
+}
+
+.accent {
+  color: purple;
+  font-weight: bolder;
+}
+
+.image-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./unsplash.jpg');
+  object-fit: cover;
+  background-position: center;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(37, 37, 37);
+  row-gap: 5px;
+}
+
+.photo-credit {
+  padding-top: 10px;
+  width: 8.5em;
+  color: black;
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+.photo-credit div {
+  padding-bottom: 1em;
+}
+
+.photo-credit a {
+  text-decoration: none;
+  color: black;
 }
 
 .button-container {
